@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_above="@id/bottom_layout"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcometext"
+        android:layout_centerInParent="true"
+        android:text="Welcome to My Chat App Beb "
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Here"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/message_edit_text"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:layout_toLeftOf="@id/send_btn"
+            android:textColorHint="@color/white"
+            android:background="@drawable/corner"
+            />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/send_btn"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:src="@drawable/sendbtn"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

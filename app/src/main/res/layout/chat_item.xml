@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:backgroundTint="#4BB6E8"
+        android:padding="5dp"
+        android:id="@+id/left_chat_view"
+        android:layout_marginEnd="80dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:id="@+id/left_chat_text"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:padding="5dp"
+        android:id="@+id/right_chat_view"
+        android:layout_below="@id/left_chat_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/right_chat_text"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
